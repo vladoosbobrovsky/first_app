@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "238855500234",
+    "firebase_url": "https://clientapp-4abbe.firebaseio.com",
+    "project_id": "clientapp-4abbe",
+    "storage_bucket": "clientapp-4abbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238855500234:android:81248862d3907094",
+        "android_client_info": {
+          "package_name": "clientapp.team.vladoos.first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238855500234-naodljse5uh4odb86am1271pv4f03vkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwCYc3Y_Qu9wY6A4w5D8Ued5_my3G4p9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238855500234-naodljse5uh4odb86am1271pv4f03vkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
