@@ -1,9 +1,11 @@
+import 'package:first_app/load_list_of_participant.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
 /// This Widget is the main application widget.
 class MyApp extends StatelessWidget {
+
   static const String _title = 'ClientApp';
   Color gradientStart = Colors.deepPurple[700]; //Change start gradient color here
   Color gradientEnd = Colors.purple[500]; //Change end gradient color here
@@ -36,7 +38,7 @@ class MyStatelessWidget extends StatelessWidget {
         children: <Widget>[
           const SizedBox(height: 150),
           new InkWell(
-            onTap: () => print('hello'),
+            //onTap: () =>
             child: new Container(
               //width: 100.0,
               height: 50.0,
@@ -60,7 +62,10 @@ class MyStatelessWidget extends StatelessWidget {
           new Padding(padding: EdgeInsets.all(25.0)),
 
           new InkWell(
-            onTap: () => print('hello'),
+            onTap: () =>
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomePage()),),
             child: new Container(
               //width: 100.0,
               height: 50.0,
