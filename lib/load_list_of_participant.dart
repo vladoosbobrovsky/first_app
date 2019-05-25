@@ -56,7 +56,7 @@ class HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           new Card(
-                            shape: StadiumBorder(side: BorderSide(width: 1.0)),
+                            shape: StadiumBorder(side: BorderSide(width: 1.1)),
                             child: Container(
                               child: new Text(
                                   data[index]['name'],
