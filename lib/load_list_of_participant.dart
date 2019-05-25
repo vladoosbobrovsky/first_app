@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
 
-  final String url="https://firebasestorage.googleapis.com/v0/b/clientapp-4abbe.appspot.com/o/qrjson.json?alt=media&token=40ece7c2-8dbe-4ed8-8332-780ef56de2b5";
+  final String url="https://firebasestorage.googleapis.com/v0/b/clientapp-4abbe.appspot.com/o/qrjson.json?alt=media&token=d7159365-f447-4239-9e9f-96a11c15a230";
   List data;
 
   @override
@@ -39,13 +39,15 @@ class HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+
     return new Scaffold(
         appBar: new AppBar(
           title: new Text("List of Participant"),
-        ),
+          elevation: 1.0,
 
+        ),
         body: new ListView.builder(
+          padding: EdgeInsets.only(top: 20.0),
             itemCount: data == null ? 0 : data.length,
             itemBuilder: (BuildContext context, int index) {
               return new Container(
@@ -54,10 +56,17 @@ class HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           new Card(
-                              child: new Container(
-                                child: new Text(data[index]['name']),
-                                padding: const EdgeInsets.all(20),
-                              ))
+                            shape: StadiumBorder(side: BorderSide(width: 1.0)),
+                            child: Container(
+                              child: new Text(
+                                  data[index]['name'],
+                              ),
+                              padding: const EdgeInsets.all(20),
+                            ),
+                          ),
+                          
+                          new Padding(
+                              padding: EdgeInsets.all(5.0))
                         ],
                       )));
             }));
