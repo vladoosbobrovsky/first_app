@@ -1,4 +1,6 @@
+import 'package:first_app/home.dart';
 import 'package:first_app/load_list_of_participant.dart';
+import 'package:first_app/scanqr.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -38,7 +40,11 @@ class MyStatelessWidget extends StatelessWidget {
         children: <Widget>[
           const SizedBox(height: 150),
           new InkWell(
-            //onTap: () =>
+            onTap: () =>
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                ),
             child: new Container(
               //width: 100.0,
               height: 50.0,
